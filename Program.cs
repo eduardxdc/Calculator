@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.Intrinsics;
 
 namespace Calculator
 {
@@ -7,10 +6,28 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Sum();
-            Subtraction();
-            Division();
-            Multiplication();
+            Menu();
+        }
+
+        static void Menu()
+        {
+            Console.Clear();
+
+            Console.WriteLine("Welcome! Select below which mathematical operation you want to perform:");
+            Console.WriteLine("");
+
+            Console.WriteLine("1- Sum");
+            Console.WriteLine("2- Subtraction");
+            Console.WriteLine("3- Division");
+            Console.WriteLine("4- Multiplication");
+
+            Console.WriteLine("");
+            Console.Write("Enter your choice: ");
+
+            short menuResul = short.Parse(Console.ReadLine());
+            Console.WriteLine($"Good! You chose the option {menuResul}");
+
+            Console.ReadKey();
         }
 
         static void Sum()
