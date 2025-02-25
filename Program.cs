@@ -10,6 +10,7 @@ namespace Calculator
             Sum();
             Subtraction();
             Division();
+            Multiplication();
         }
 
         static void Sum()
@@ -65,5 +66,24 @@ namespace Calculator
 
             Console.ReadKey();
         }
+
+        static void Multiplication()
+        {
+            Console.Clear();
+
+            Console.WriteLine("Enter a first value:");
+            float multiFirstValue = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter a second value:");
+            float multiSecondValue = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("==============================");
+
+            float multiResult = multiFirstValue * multiSecondValue;
+            Console.WriteLine($"Result of the multiplication is: {multiResult}");
+
+            Console.ReadKey();
+        }
     }
+
 }
