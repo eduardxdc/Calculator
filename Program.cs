@@ -9,6 +9,7 @@ namespace Calculator
         {
             Sum();
             Subtraction();
+            Division();
         }
 
         static void Sum()
@@ -47,6 +48,22 @@ namespace Calculator
             Console.ReadKey();
         }
 
+        static void Division()
+        {
+            Console.Clear();
 
+            Console.WriteLine("Enter the first value:");
+            float divFirstValue = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second value:");
+            float divSecondValue = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("==============================");
+
+            float divResult = divFirstValue / divSecondValue;
+            Console.WriteLine($"Result of the division is: {divResult}");
+
+            Console.ReadKey();
+        }
     }
 }
