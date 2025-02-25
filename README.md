@@ -3,6 +3,8 @@
 
 This project (**console-app**) is a calculator made in **C#**, using basic mathematical operations, creating and calling functions, switch/case and also text input and output with string interpolation.
 
+https://github.com/user-attachments/assets/080515e0-1340-4a74-a9f5-b21b59f70ed2
+
 ## Table of Contents
 
 - [Installations](#installations)
