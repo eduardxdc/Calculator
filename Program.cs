@@ -9,13 +9,17 @@ namespace Calculator
         {
             Console.Clear();
 
-            Console.WriteLine("Enter the first value: ");
+            Console.WriteLine("Enter the first value:");
             float firstValue = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the second value: ");
-            float secondValue = float.Parse(Console.ReadLine());       
+            Console.WriteLine("Enter the second value:");
+            float secondValue = float.Parse(Console.ReadLine());   
+              
+            Console.WriteLine("==============================");
 
-            Console.WriteLine(firstValue + " " + secondValue);
+            float sumResult = firstValue + secondValue; 
+
+            Console.WriteLine($"Result of the sum is: {sumResult}");
         }
     }
 }
